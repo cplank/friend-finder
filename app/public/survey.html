@@ -10,6 +10,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,98 +37,136 @@
         <div class="form-group">
             <label for="question1">You think about food a lot. Like way too much.</label>
             <select class="form-control" id="question1">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Mmmm. Food.</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question2">STEM subjects are your favorite topics.</label>
             <select class="form-control" id="question2">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Science, Technology, Engineering, Oh my!</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question3">Cooking is one of your passions, especially baking cute cupcakes.</label>
             <select class="form-control" id="question3">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Only the cutest cupcakes.</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question4">Sometimes you have a hard time keeping your temper under control.</label>
             <select class="form-control" id="question4">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Are you a hothead?</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question5">You love solving mysteries.</label>
             <select class="form-control" id="question5">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Who dunnit?</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question6">You're a total daredevil - bring on the fast cars and motorcycles!</label>
             <select class="form-control" id="question6">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Would you jump out of a perfectly good plane?</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question7">For better or worse, you're very intune with other people's feelings.</label>
             <select class="form-control" id="question7">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>~~Feelings~~</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question8">You thrive in competition.</label>
             <select class="form-control" id="question8">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Bring it!</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question9">People often describe you as "cool as a cucumber".</label>
             <select class="form-control" id="question9">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>Cold as ice...</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
             <label for="question10">Despite your best efforts, you have a tendency to create chaos wherever you
                 go.</label>
             <select class="form-control" id="question10">
-                <option>1 (not really me)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (totes me!)</option>
+                <option value="Default" selected disabled>I don't find trouble, trouble finds me.</option>
+                <option value="1">1 (not really me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (totes me!)</option>
             </select>
         </div>
+        <button type="submit" class="btn btn-primary submit">BFF Power!</button>
     </form>
+
+    <script type="text/javascript">
+        //grab the value of each survey answer and save into an array
+        //post the array to the server
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+
+            if ($("#Name").val() === "" || $("photo").val() === "") {
+                alert("Please enter your name and submit a photo!")
+            } else {
+
+                let userScore = [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val(),
+                    $("#question8").val(),
+                    $("#question9").val(),
+                    $("#question10").val()
+                ]
+
+                console.log(userScore);
+
+                $.post("/api/friends", userScore, function (data) {
+                    console.log("Your BFF is:", data);
+                })
+            }
+        })
+
+
+
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

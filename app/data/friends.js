@@ -18,3 +18,5 @@ let allScouts = [
     newScout("Sailor Pluto", "https://vignette.wikia.nocookie.net/sailormoon/images/1/12/E24990749fd7bf4c4c33d1bfa02e6804.jpg/revision/latest?cb=20180810090057", [1, 5, 4, 1, 3, 2, 5, 3, 5, 1]),
     newScout("Sailor Mini Moon", "https://vignette.wikia.nocookie.net/sailormoon/images/9/96/Eternal_Sailor_Chibi_Moon.jpg/revision/latest?cb=20180810085933", [5, 1, 1, 5, 5, 4, 4, 3, 1, 4])
 ];
+
+module.exports = allScouts;

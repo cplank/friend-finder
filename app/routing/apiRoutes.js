@@ -14,5 +14,31 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
         //This wil be used to handle incoming survey results
         //this route will also be used to handle the compatibility logic
+        let userScore = req;
+        let lowestScore = 50;
+        let bestFriend = {};
+
+        //compare each inde of userScore to each index of friendsData.scores.
+        //will need to loop through friendsData and then also loop through scores.
+        for (let i = 0; i < friendsData.length; i++) {
+            let scoutScore = friendsData[i].scores;
+            let friendDiff = compareScores(userScore, scoutScore);
+            if (lowestScore > friendDiff) {
+                lowestScore = friendDiff
+                bestFriend = friendsData[i];
+            }
+        }
+        res.json(bestFriend);
+
+
+        function compareScores(arr1, arr2) {
+            let totalDiff = 0;
+            for (let i = 0; i < arr1.length; i++) {
+                let elementDiff = arr1[i] - arr2[i];
+                elementDiff = Math.abs(elementDiff);
+                totalDiff = totalDiff + elementDiff
+            }
+            return totalDiff;
+        }
     })
 }
