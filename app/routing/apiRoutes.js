@@ -21,25 +21,29 @@ module.exports = function (app) {
         //compare each inde of userScore to each index of friendsData.scores.
         //will need to loop through friendsData and then also loop through scores.
         for (let i = 0; i < friendsData.length; i++) {
+            //getting each Scout's score and saving it
             let scoutScore = friendsData[i].scores;
+            //comparing the userscore to each Scout score
             let friendDiff = compareScores(userScore, scoutScore);
-            console.log(friendDiff);
+            //determining which Scout has the closest score to the user
             if (lowestScore > friendDiff) {
                 lowestScore = friendDiff
                 bestFriend = friendsData[i];
             }
         }
+        //Sending over our result as a bestFriend object
         res.json(bestFriend);
 
-
+        //function to compare the two score arrays
         function compareScores(arr1, arr2) {
             let totalDiff = 0;
             for (let i = 0; i < arr1.length; i++) {
+                //the user values were strings, so needed to turn into int to do math
                 let elementDiff = parseInt(arr1[i]) - parseInt(arr2[i]);
                 elementDiff = Math.abs(elementDiff);
                 totalDiff = totalDiff + elementDiff
             }
-            console.log(arr1, arr2)
+
             return totalDiff;
         }
     })

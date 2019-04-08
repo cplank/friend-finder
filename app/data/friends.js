@@ -1,5 +1,6 @@
 //save application's data as an array of objects. 
 
+//making a function to cut down on repeated typing
 function newScout(name, photo, scores) {
     return {
         name, photo, scores
@@ -19,4 +20,5 @@ let allScouts = [
     newScout("Sailor Mini Moon", "https://vignette.wikia.nocookie.net/sailormoon/images/9/96/Eternal_Sailor_Chibi_Moon.jpg/revision/latest?cb=20180810085933", [5, 1, 1, 5, 5, 4, 4, 3, 1, 4])
 ];
 
+//exporting the data 
 module.exports = allScouts;

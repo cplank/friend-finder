@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 8008;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
 //use routes to give the server a map of how to respond 
 
 require("./app/routing/apiRoutes")(app);
