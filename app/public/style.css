@@ -1,3 +1,39 @@
 body {
-    background-image: url(images/heartsbackground.gif);
+    background-image: url(images/allscouts.png);
+    background-position: fixed;
+    background-size: cover;
+}
+
+#survey-box {
+    background-color: rgba(114, 78, 102, 0.7);
+    margin: 50px 160px;
+    border-radius: 20px;
+    border: 2px solid pink;
+    padding: 20px;
+}
+
+.container, .jumbotron {
+    background-color: rgba(114, 78, 102, 0.7);
+    border: 2px solid pink;
+    border-radius: 20px;
+}
+
+
+hr {
+    border: 1px solid gray;
+}
+
+.jumbotron {
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: pink;
 }

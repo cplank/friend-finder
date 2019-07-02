@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 8008;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// serve up static files
+app.use(express.static("public"));
+
 
 //use routes to give the server a map of how to respond 
 
